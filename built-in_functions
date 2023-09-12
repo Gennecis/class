@@ -1,0 +1,11 @@
+# len() function:- used to know the number(length) of elements in a list, array or srtings
+# there are 4 elements in the variable list variable example_len - 21, men, 23, women.
+'''example_len = [21, "men", 23, "women"]
+print(len(example_len))'''
+
+# range() function:- returns the indexing of elements in a list
+'''example_range = ["men","women", "girls", "boys"]
+for index in range(len(example_range)):
+    example = example_range[index]
+    if example == "men":
+        print(f"men was located at index", index)'''
