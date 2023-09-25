@@ -100,3 +100,4 @@ if "m" not in fruit:
     print("true")
 else:
     print("false")
+print("-" *50)

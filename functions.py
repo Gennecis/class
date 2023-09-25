@@ -1,5 +1,46 @@
-'''# define a function that computes a user's bmi using the formular weight/height^2
-def bmi(weight, height):
+# define a function that returns a given set of numbers in descending order
+# e.g 123456 to 654321
+def descending_order(num):
+    # get the digits as a list
+    number = []
+    for digit in str(num):
+        number.append(digit)
+    print(num)
+    print(number)
+    # sort the digits
+    number.sort(reverse = True)
+    print(number)
+    # turn the list back into a number
+    change_number = "".join(number)
+    print(int(change_number))
+    return int(change_number)
+
+descending_order(123456)
+
+# define a function that get the initials of a user in uppercase letters
+'''def get_initials(name, force_upper):
+    if force_upper:
+        initial = name[0:1].upper()
+    else:
+        initial = name[0:1]
+    return initial
+first_name = input("enter your first name: ")
+last_name = input("enter your last name: ")
+print("your initiala are:", get_initials(first_name, True) + get_initials(last_name, True))'''
+# define a function that returns the initials of a user's name
+'''def return_initials(name):
+    username = name[:1].upper()
+    return username
+
+firstname = input("enter first name: ")
+lastname = input("enter last name: ")
+
+first_initial = return_initials(firstname)
+second_initial = return_initials(lastname)
+print(first_initial, second_initial)'''
+
+# define a function that computes a user's bmi using the formular weight/height^2
+'''def bmi(weight, height):
     bmi = weight/height**2
     return bmi
 # allow user to enter their data for weight and height in floating point values
@@ -11,11 +52,11 @@ user_bmi = bmi(input_weight, input_height)
 # display user_bmi
 print ("your BMI is", user_bmi)'''
 
-'''Write a function findNeedle() that takes an array full of junk but containing one "needle"
-After your function finds the needle it should return a message (as a string) that says:
-"found the needle at position " plus the index it found the needle, so:
-Example(Input --> Output)
-["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" '''
+#Write a function findNeedle() that takes an array full of junk but containing one "needle"
+#After your function finds the needle it should return a message (as a string) that says:
+#"found the needle at position " plus the index it found the needle, so:
+#Example(Input --> Output)
+#["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
 
 '''def find_needle(haystack):
     for index, word in enumerate(haystack):
